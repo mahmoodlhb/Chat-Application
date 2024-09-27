@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#FFF1E1"
+    >
+
+    <!-- App Logo or Image -->
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_gravity="center"
+        android:contentDescription="App Logo"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_to_your_account"
+        android:textColor="#8A2BE2"
+    android:textSize="24sp"
+    android:fontFamily="sans-serif-medium"
+    android:layout_marginTop="16dp"/>
+
+    <!-- Google Sign-In Button -->
+    <Button
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_with_google"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF4500"
+    android:layout_marginTop="24dp"
+    android:padding="12dp"
+
+    android:drawablePadding="12dp"/>
+
+    <!-- Username/Password Input -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:backgroundTint="#FFD700"
+    android:padding="12dp"
+    android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:backgroundTint="#FFD700"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Phone Number Input for Login -->
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:backgroundTint="#FFD700"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#8A2BE2"
+    android:layout_marginTop="16dp"
+    android:padding="12dp"/>
+
+    <!-- Forgot Password Link -->
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="#FF4500"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:focusable="true" />
+
+</LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
